@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragmentProfile">
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        app:srcCompat="@drawable/iv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:padding="10dp"
+        android:text="Yusup Maulanadireja"
+        android:layout_alignStart="@id/iv_profile"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="26sp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/aboutStudy"
+        android:layout_below="@id/iv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="About Study"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="NIM : 10116093"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="KELAS : IF-3/AKB-3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/aboutStudy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="About Me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:alpha="0.5"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="Saya merupakan salah satu mahasiswa di Universitas Komputer Indonesia, jurusan Teknik Informatika semester 6. Saya memiliki hobi yaitu fotografi dimana saya sudah bekerja disalah satu studio di bandung lebih tepatnya di File Studio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
